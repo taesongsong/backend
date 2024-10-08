@@ -1,0 +1,173 @@
+*{margin: 0; padding: 0;}
+.wrap{
+    width: 900px;
+    margin: 0 auto;
+    /* 전체 중앙 정렬 */
+}
+header{
+    height: 300px;
+    background: url(../images1/top.jpg)/* 위치 조정 */; 
+    /* (../)방 하나 나가서 찾을때마다 사용 */
+    position: relative;
+      /* position realative : 해당 영역에 박스를 만들어 
+        틀 안에 위치를 고정 시켜주는 역할, 브라우저 화면 기준으로 보여짐 */
+}
+/* header h1{} 라고 사용해도 됨.*/
+.logo{
+    position: absolute;   /* position absolute 위치를 이동시켜줄 수 있는 명령어 */
+    bottom: 50px;
+    right: 50px;
+    color: #fff;
+}
+nav{
+    width: 900px;
+    height: 70px;
+    /* 높이를 따로 주거나 overflow : hidden 주기 */
+    background-color: #2a1d0a;
+}
+nav ul{
+    list-style: none; /* 불릿 없애기 */
+    /* nav ul li 넣어도 무방함. */
+}
+nav ul li{
+    float: left;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+nav ul li a{
+    display: block;
+    /* a 는 인라인 요소기 때문에 넓이와 높이를 주기 
+    위해서 블럭요소로 바꿈 */
+    width: 150px;
+    height: 40px;
+    line-height: 40px; /* 줄간격 세로 중앙 정렬 */
+    border: 1px solid #fff;
+    text-align: center; /* 가로 중앙 정렬 */
+    border-radius: 20px;
+    text-decoration: none; /* 밑줄 제거 */
+    color: white;
+    font-weight: bold; /* 글자 두껍게 */
+
+}
+nav ul li a:hover{ /* a 태그에 마우스를 올렸을때 */
+    background-color: #fff;
+    color: #000;
+    text-decoration: underline; /* 밑줄 */
+}
+
+*{margin: 0;padding: 0;}
+.wrap{
+   width: 900px;
+   margin: 0 auto;
+    /*전체 중앙정렬  */
+}
+header{
+    position: relative;
+    height:300px;
+    background: url(../images/top.jpg);
+}
+/* header h1{} */
+.logo{
+    position: absolute;
+    bottom:50px;
+    right:50px;
+    color:#fff;
+}
+nav{
+  width: 900px;
+  height:70px;
+  background-color: #2a1d0a;  
+}
+nav ul{
+    list-style: none;
+    /* 블릿없애기 */
+}
+nav ul li{
+    float: left;
+    /* background-color: aqua; */
+    margin-left: 25px;
+    margin-top: 15px;
+}
+nav ul li a{
+    display: block;
+    /* a 인라인요소 width,height 를 적용하기위해
+    블록 요소로 변경 */
+    width:150px;
+    height:40px;
+    line-height: 40px;/*줄간격 - 세로중앙정렬*/
+    border: 1px solid #fff;
+    text-align: center;/*가로중앙정렬*/
+    border-radius: 20px;/*모서리둥글게*/
+    text-decoration: none;/*밑줄없애기*/
+    color:white;/*글자색 흰색*/
+    font-weight: bold;
+    /* 글자 진하게 */
+}
+/*a태그에 마우스 올렸을때*/
+nav ul li a:hover{
+    background-color: #fff;/*배경색-흰색*/
+    color:#000;/*글자색 검정*/
+    text-decoration: underline;/*밑줄*/
+}
+.content{
+    /* height:550px; */
+    overflow: hidden;
+}
+
+section{
+    width:650px;
+    height:550px;
+    background-color: #ccc;
+    float: left;
+}
+
+section h3{
+    padding: 10px 0;
+    /* 위아래 안여백  */
+    text-align: center;
+}
+
+section article{
+width: 270px;
+height: 200px;
+border: 1px solid #333;
+float: left; /* 옆으로 나열 */
+padding: 10px;
+margin-left: 20px;
+margin-bottom: 20px;
+}
+
+article h4{
+   background: url(../images/kong.png) no-repeat;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+article p{
+    line-height: 170%; /* 줄간격 */
+    text-align: justify; /* 양쪽 정렬 */
+}
+
+aside{
+    width:250px;
+	height:550px;
+	background-color:#726054;
+	float:left;
+    text-align: center; /* 글자랑 이미지 모두 가운데 정렬 */
+    }
+
+aside h3{
+    padding: 10px 0;
+    }
+
+aside img{
+    width:220px;
+    padding-bottom: 10px;
+}
+footer{
+    /* clear:both; - float를 취소 */
+    height:60px;
+    background-color: #333;
+    color:#fff; 
+    text-align: center;
+   }

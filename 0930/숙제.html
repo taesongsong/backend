@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    #gnb{
+        width:220px;
+        position: absolute;
+        right:0;
+        top:150px;
+    }
+    
+    #gnb > li{
+        position: relative;
+    }
+    #gnb > li >a{
+        display: block;
+        width:220px;
+        height:50px;
+        font:bold 18px/3 play;
+        /* 글자:진하게 크기18 줄간격 3배 글씨체 play */
+        box-sizing: border-box;
+        text-align: right;
+        padding-right: 40px;
+        color:#222;
+    }
+    #gnb em{
+        display: inline-block;
+    /* 박스로 만들어야 각도를 줄수 있다 */
+        transform: skewX(40deg);
+     /* 전체 header -40deg -> 40deg 글자 재대로 보임 */
+    }
+    #gnb > li.on >a, #gnb > li:hover >a{
+        background-color: #111;
+        color:#fff;
+    }
+    
+    #gnb li ul{
+        position: absolute;
+        left:0px;
+        top:0;
+        opacity: 0;
+        visibility: hidden;
+        /* display:none과 비슷 */
+        transition: all 0.6s;
+    }
+    /* #gnb li:nth-child(2) ul{
+        visibility: visible;
+    } */
+    #gnb ul a{
+        display: block;
+        width: 150px;
+        background-color: #222;
+        font: bold 16px/2.5 arial;
+        color: #fff;
+        box-sizing: border-box;
+        padding-left: 50px;
+        margin-bottom: 3px;
+        transition: all 0.6s;
+        border-bottom: 1px solid #69fb05;
+    }
+    
+    #gnb li:hover ul{
+        left:220px;
+        opacity: 1;
+        visibility: visible;
+    }
+    <nav>
+                <ul class="gnb">
+                    <li><a href="#">분양안내</a>
+                        <ul>
+                            <li><a href="#">분양캘린더</a></li>
+                            <li><a href="#">분양정보</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">현장안내</a>
+                        <ul>
+                            <li><a href="#">공사단지 정보</a></li>
+                            <li><a href="#">입주단지 정보</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">입주안내</a>
+                        <ul>
+                            <li><a href="#">입주가이드</a></li>
+                            <li><a href="#">중도금납부조회</a></li>
+                            <li><a href="#">입주예약</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">고객서비스</a>
+                        <ul>
+                            <li><a href="#">A/S센터</a></li>
+                            <li><a href="#">고객문의</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">브랜드</a>
+                        <ul>
+                            <li><a href="#">센트레빌</a></li>
+                            <li><a href="#">센트레빌 아스테리움</a></li>
+                            <li><a href="#">단지갤러리</a></li>
+                            <li><a href="#">수상실적</a></li>
+                            <li><a href="#">센트레빌 소식</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="sub_shadow"></div>	
+            </nav>	
+
+</body>
+</html>

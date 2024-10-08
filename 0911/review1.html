@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+table{text-align: center;}
+/* 상속 : 가장 상위에 있는 Table에 다가 align 걸어서 전부 걸림 */
+.left{text-align: left;}
+/* 전체 상속이 걸려있는 상태에서 class 걸어서 다르게 할수있다 */
+
+    </style>
+</head>
+<body>
+    <table border="1">
+        <colgroup>
+        <col style="width: 150px;">
+        <col style="width: 150px;">
+        <col style="width: 150px;">
+        <col style="width: 150px;">
+        <col style="width: 150px;">
+        </colgroup>
+<tr>
+    <td rowspan="2">과목+내용</td>
+    <td colspan="2">html+css</td>
+    
+    <td>javascript</td>
+    <td>jqeury</td>
+</tr>
+
+    
+<tr>
+    
+    <td class="left">쉽고</td>
+    <td>재미있고</td>
+    <td>좀 어렵지만</td>
+    <td>동적이다.</td>
+</tr>
+
+    </table>
+    
+</body>
+</html>

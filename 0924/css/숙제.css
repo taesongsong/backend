@@ -1,0 +1,131 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: black;}
+
+#wrap{
+    width: 1000px;
+    height: 650px;
+    background-color: blanchedalmond;
+    margin: 0 auto;
+}
+
+header section{
+    position: relative;
+    width: 90%;
+    height: 250px;
+    border: 1px solid #333;
+    background-color: pink;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+#main{
+    width: 800px;
+    height: 650px;
+    background-color: darkgrey;
+    float: right;
+}
+
+header{
+    width: 200px;
+    height: 650px;
+    background-color: pink;
+    float: left;
+}
+
+header h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gnb>li{
+    position: absolute;
+ line-height: 10px;
+ width: 100%;
+ height: 50px;
+ text-align: center; 
+ margin-top: 10px;
+ font-size: 20px;
+}
+
+.ddd>li>a{    
+    position: absolute;
+    display: block;
+    text-align: center;
+     width: 180px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    float: right;
+    left: 180px;
+   }
+
+.ddd li{
+    display: none;
+ }
+
+
+.gnb>li:hover .ddd li{display: block;}
+
+.gnb li:hover {
+    background-color: dimgrey;
+    color: white;
+}
+
+#img_slide{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(209, 219, 115);
+   }
+
+section{
+    width: 800px;
+    height: 200px;
+    background-color: cyan;
+   }
+
+section .notice{
+    width: 33.3%;
+    height: 200px;
+    background-color: cornflowerblue;
+}
+
+section .banner{
+    width: 33.3%;
+    height: 200px;
+    background-color: rgb(26, 79, 177);
+}
+
+section .icons{
+    width: 33.3%;
+    height: 200px;
+    background-color: orange;
+}
+
+section>article{float: left;}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: greenyellow;
+    }
+
+.f_logo{
+    width: 150px;
+    height: 100px;
+    background-color: chartreuse;
+}
+
+.f_menu{
+    width: 650px;
+    height: 50px;
+    background-color: darkkhaki;
+}
+
+.f_copy{
+    width: 650px;
+    height: 50px;
+    background-color: darkseagreen;
+}
+
+footer>article{float: left;} 

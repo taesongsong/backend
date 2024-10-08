@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.container div{
+    width: 100vw;
+    height: 100vh;
+}
+.b1{
+    background-color: aqua;
+    background-image: url(images/back1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.b2{
+    background-color:  rgb(136, 57, 123) ;
+    background-image: url(images/back2.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.b3{
+    background-color:  rgb(36, 177, 48) ;
+    background-image: url(images/back3.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    /*  attachment : 뒤에있는 백그라운드를 테이프 붙인거 처럼 고정 */
+}
+.b4{
+    background-color: rgb(89, 157, 212) ;
+    background-image: url(images/back4.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.b5{
+    background-color:  rgb(214, 228, 18) ;
+    background: url(images/back5.jpg) fixed no-repeat  50% 50% / cover;
+    /* no-repeat fixed 위치는 바뀌어도 되지만 50% 50% / cover 위치는 고정 */
+  
+}
+</style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="b1">배경1</div>
+        <div class="b2">배경2</div>
+        <div class="b3">배경3</div>
+        <div class="b4">배경4</div>
+        <div class="b5">배경5</div>
+
+    </div>
+</body>
+</html>

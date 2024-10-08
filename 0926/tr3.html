@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    
+div{
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    background: #0094ff;
+}
+
+.box{
+    transition: all 2s ease-in;
+}
+.box:hover{
+    transform: scale(2) perspective(120px) rotateX(180deg);
+    /* perspective = 원근 */
+}
+/* transform 명령어가 2개이상 들어갈 경우 위처럼
+tranform 하나에 명령어를 나열 해야된다. */
+
+</style>
+    
+</head>
+<body>
+
+    <div class="box"></div>
+
+</body>
+</html>

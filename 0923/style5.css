@@ -1,0 +1,99 @@
+.bigbox{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.face{
+    width: 500px;
+    height: 500px;
+    border: 10px solid #333;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: rgb(107, 141, 214);
+}
+
+.eye{
+    
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    top: 190px;
+    background-color: black;
+}
+
+.eye.left{left: 100px;}
+.eye.right{right: 100px;}
+
+.nose{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    top: 285px;
+    background-color: black;
+    left: 230px;
+    z-index: 1;
+}
+
+.mouth{
+    position: absolute;
+    width: 110px;
+    height: 70px;
+    border: 5px solid #333;
+    border-radius: 50%;
+    background-color: white;
+    top: 265px;
+    left: 250px;
+}
+
+.mouth.right{
+    transform-origin: left center;
+    transform: rotate(135deg);
+   }
+
+.mouth.left{
+    transform-origin: left center;
+    transform: rotate(45deg);
+}
+
+.ter{
+    position: absolute;
+    width: 80px;
+    border: 2px solid #333;
+}
+
+.ter.left{
+    top: 340px;
+    left: 300px;
+}
+
+.ter.right{
+    top: 340px;
+    left: 120px;
+}
+
+.ter.left.ter1{
+    transform-origin: left center;
+    transform: rotate(45deg);
+}
+
+.ter.left.ter3{
+    transform-origin: left center;
+    transform: rotate(-45deg);
+}
+.ter.right.ter1{
+    transform-origin: right center;
+    transform: rotate(45deg);
+}
+
+.ter.right.ter3{
+    transform-origin: right center;
+    transform: rotate(-45deg);
+}
