@@ -1,0 +1,17 @@
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+#wrapper{
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+header{
+    height: 205px;
+    background-color: #f46075;
+    background-image: url(../nav2.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
