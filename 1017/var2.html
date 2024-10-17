@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+    var x = 10;
+function varExample(){
+    var x = 1;
+
+    if(true){
+        var x =2 ; // 함수 블럭내에서 유효
+        document.write(x, "<br>"); // 2
+    }
+    document.write(x, "<br>"); // 2 
+    }
+varExample();
+//재선언 재할당이 가능
+
+document.write(x, "<br>");
+</script>
+
+
+</head>
+<body>
+    
+    
+</body>
+</html>
