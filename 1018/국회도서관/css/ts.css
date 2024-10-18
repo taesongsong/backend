@@ -1,0 +1,54 @@
+*{margin: 0; padding: 0;}
+
+#tabWrap{
+    width: 50%;
+    height: 50px auto 0;
+}
+
+.tab_menu{
+  display:flex ;
+  list-style: none;
+}
+
+.tab_menu li{
+    width: 20%;
+    text-align: center;    
+}
+
+.tab_menu li a{
+    display: block;
+    padding: 10px 0;
+    color: black;
+    font-weight: bold;
+    background-color: #777;
+    text-decoration: none;
+}
+
+.tab_menu li a.active{
+    background-color: rgb(72, 72, 138);
+    color: white;
+}
+
+#tabContent{
+    border:  1px solid rgb(35, 35, 245);
+    padding: 20px;
+    height: 200px;
+    box-sizing: border-box;   
+   
+}
+
+
+#tabContent > div{
+    display: none;     
+}
+
+#tabContent > div:first-child{
+    display: block;
+}
+
+#tabContent > div p{
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

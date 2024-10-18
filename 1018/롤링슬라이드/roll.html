@@ -55,9 +55,7 @@ overflow: hidden;
                 <li><a href="#"><img src="images/pic_t3.jpg" alt=""></a></li>
                 <li><a href="#"><img src="images/pic_t4.jpg" alt=""></a></li>
                 <li><a href="#"><img src="images/pic_t5.jpg" alt=""></a></li>
-                <li><a href="#"><img src="images/pic_t1.jpg" alt=""></a></li>
-                <li><a href="#"><img src="images/pic_t2.jpg" alt=""></a></li>
-                <li><a href="#"><img src="images/pic_t3.jpg" alt=""></a></li>
+                
             </ul>
         </div>
         <p>
@@ -83,6 +81,14 @@ overflow: hidden;
         //alert(li_width);
         var li_width = 80; //li크기 (이미지크기72 +8) 
     
+        for(var i = 0; i < 3; i++){
+            var copyobj = listLi[i].cloneNode(true); // cloneNode = 복사
+            list.append(copyobj); // append = 추가
+        }
+
+        // #banner li - 0번째 인덱스 번호에 해당하는 li 선택 복제후 copyobj 저장.
+        // #banner 맨뒤에 copyobj를 추가해라
+
         var num = 0;
         next.addEventListener('click',function(){
             if(num==5){
