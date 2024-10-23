@@ -20,7 +20,7 @@ bigBox.forEach(function(box,index){
             // if(x){addEventListener('click',function(){
             //     box.style.backgroundImage = ""
             // })}
-        })
-    })
+        });
+    });
 });
-})
+});
