@@ -25,16 +25,16 @@ var menuLia = document.querySelectorAll('.m_menu>li>a');
 //     });
 // });
 
-for(var i = 0; i < menuLia.length; i++){
+for(var i = 0; i < menuLia.length ; i++ ){
     menuLia[i].addEventListener('click',function(){
-        var subHeight = getComputedStyle(this.nextElementSibling).height;
+        var subHeight =   getComputedStyle(this.nextElementSibling).height;
 
-        if(subHeight === '0px'){
-            slideUp();  //현재 열려있는 sub를 모두 닫고
-            this.nextElementSibling.style.height = '108px';
-    }   else{
-             this.nextElementSibling.style.height = '0px';
+    if(subHeight === '0px'){
+        slideUp();  //현재 열려있는 sub를 모두 닫고
+        this.nextElementSibling.style.height = '108px';
+    } else{
+        this.nextElementSibling.style.height = '0px';
     }   
     });
-
+   
 }

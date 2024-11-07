@@ -6,76 +6,68 @@
     <title>Document</title>
     <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
 <style>
-*{margin: 0; padding: 0;}
-
+*{margin:0;padding:0;}
+	
 .section{
-    width: 100%;
-    height: 1000px;
-    position: relative;
+    width:100%;
+    height:1000px;
+    position:relative;
 }
-
 #main{
-    background-color: pink;
+    background-color:pink;
 }
-
+	
 #about{
-    background-color: plum;
+    background-color:plum;
 }
-
 /* 정중앙 그래프 위치 */
 #bar{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 50%;
-}
-
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:50%;
+} 
 #bar .skillbar{
-    width: 100%;
-    height: 40px;
-    background-color: #fff;
-    margin: 5px 0;
-    position: relative;
+    width:100%;
+    height:40px;
+    background-color:#fff;
+    margin:5px 0;
+    position:relative;
 }
-
 .skillbar .skill_title{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 110px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    z-index: 5;
+    position:absolute;
+    top:0;
+    left:0;
+    width:110px;
+    height:40px;
+    text-align:center;
+    line-height:40px;
+    z-index:5;
 }
-
 .skillbar .skill_percent{
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 40px;
-    line-height: 40px;
+    position:absolute;
+    right:0;
+    top:0;
+    height:40px;
+    line-height:40px;
     padding-right:20px;
-    z-index: 5;
+    z-index:5;
 }
-
 .skillbar .skill_bar{
-    width: 0;
-    height: 40px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: salmon;
+    width:0;
+    height:40px;
+    position:absolute;
+    left:0;
+    top:0;
+    background-color:salmon;
 }
-
 
 </style>
 
 
-    <script>
-
-    $(function(){    
+<script>
+$(function(){    
    $(window).scroll(function(){
         var sct = $(window).scrollTop();
         //console.log(sct);
@@ -86,13 +78,13 @@
    });
  
    function graph(){
-    // 그래프 애니메이션
+    //그래프 에니메이션
     $('.skillbar').each(function(){
         $(this).find('.skill_bar').animate({
             "width":$(this).attr("data-percent") +"%"
         },5000);
-    });    
-    //숫자 카운트 애니메이션
+    }); 
+    //숫자카운트 에니메이션   
     if($('.skillbar').hasClass('on') == false){
         $('.Count').each(function(){
             var t = $(this);
@@ -103,13 +95,15 @@
                 }
             });
         });
-
     }
    $(".skillbar").addClass("on");
    }
 
 });
-    </script>
+
+
+</script>
+
 </head>
 <body>
     <div id="wrap">
