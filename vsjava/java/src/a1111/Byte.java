@@ -5,7 +5,7 @@ public class Byte {
         byte a = 25;
         byte b = 110;
         int result = a + b;
-        System.out.println(result);
+        System.out.println(result); 
 
     }
 }
