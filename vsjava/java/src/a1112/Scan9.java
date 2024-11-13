@@ -2,9 +2,12 @@ package a1112;
 
 import java.util.Scanner;
 
-public class Scan8 {
+public class scan9 {
     public static void main(String[] args) {
-        
+        //일력 예시  
+        //A
+        //b
+       // 출력 b A
         Scanner scanner = new Scanner(System.in);
         System.out.println();
         System.out.print("a 값 입력: ");
@@ -15,5 +18,6 @@ public class Scan8 {
         
         System.out.print(a+":"+b);
        
+ 
     }   
 }

@@ -15,8 +15,7 @@ function App(){
       <Hello 
       // 열리는 태그 내부에서는 이렇게 주석을 작성가능
       />
-      
-      
+            
       <div style={style1}>{name}</div>
       <div className="lime-box"></div>
     </>
