@@ -1,3 +1,4 @@
+package a1115;
 public class Sukjae {
 // 1.계절 출력
 // 사용자로부터 월(1~12)을 입력받아 해당 월에 맞는 계절을
