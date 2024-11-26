@@ -24,12 +24,12 @@ function App() {
     {
       id: 2,
       username: 'tester',
-      email: 'ghuwr@example.com'
+      email: 'f1212@example.com'
     },
     {
       id: 3,
       username: 'liz',
-      email: 'effqf@example.com'
+      email: 'sdqw@example.com'
     }
   ]);
 
@@ -40,7 +40,7 @@ function App() {
       username,
       email
     };
-    setUsers([...users, user]);
+    setUsers(users.concat(user));
 
     setInputs({
       username: '',
